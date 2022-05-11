@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, height=device-height, viewport-fit=cover, minimum-scale=1"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>Just Spin</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="warning">
+          <div class="text"></div>
+          <div class="again">PLAY AGAIN</div>
+      </div>
+
+      <img src="../png/table.png" alt="table" class="table" />
+
+      <a href="./main.html"><div class="block home">LOBBY</div></a>
+
+      <div class="roulette_cont">
+        <img src="../png/arrow.png" alt="" />
+        <div class="inner_roulette_cont"></div>
+      </div>
+
+      <div class="bet_option_cont">
+        <div class="bet_option" data-option="1-18">
+          <div class="top">1 to 18</div>
+          <div class="bottom">1:2</div>
+        </div>
+
+        <div class="bet_option" data-option="0">
+          <div class="top">0</div>
+          <div class="bottom">1:36</div>
+        </div>
+
+        <div class="bet_option" data-option="19-36">
+          <div class="top">19 to 36</div>
+          <div class="bottom">1:2</div>
+        </div>
+      </div>
+
+      <div class="coin_cont"></div>
+
+      <div class="player">
+        <img class="avatar" />
+        <div class="block"></div>
+      </div>
+
+      <div class="friend one">
+        <img class="avatar" />
+        <div class="block name"></div>
+        <div class="block friend_balance"></div>
+      </div>
+
+      <div class="friend two">
+        <img class="avatar" />
+        <div class="block name"></div>
+        <div class="block friend_balance"></div>
+      </div>
+
+      <div class="friend three">
+        <img class="avatar" />
+        <div class="block name"></div>
+        <div class="block friend_balance"></div>
+      </div>
+
+      <div class="friend four">
+        <img class="avatar" />
+        <div class="block name"></div>
+        <div class="block friend_balance"></div>
+      </div>
+
+      <div class="block balance_field"></div>
+      <div class="block bet_button">SPIN</div>
+    </div>
+    <script src="../scripts/game.js" type="module"></script>
+  </body>
+</html>

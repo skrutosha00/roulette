@@ -1,0 +1,22 @@
+.text {
+  padding: 5px;
+  text-align: left;
+  font-weight: 400;
+  height: 95%;
+  overflow: scroll;
+
+  font-style: normal;
+}
+
+.block {
+  width: 128px;
+  height: 57px;
+  line-height: 57px;
+
+  font-weight: 900;
+  font-size: 24px;
+
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

@@ -1,0 +1,543 @@
+.wrapper {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+}
+
+.table {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 100%;
+  min-height: 320px;
+}
+
+.home {
+  width: 66px;
+  height: 30px;
+  line-height: 30px;
+
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.roulette_cont {
+  position: relative;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 285px);
+
+  overflow: hidden;
+
+  width: 570px;
+  height: 60px;
+
+  border-radius: 10px;
+  border: 5px solid transparent;
+  background: linear-gradient(180deg, #095548 0%, #095548 100%) padding-box,
+    linear-gradient(180deg, #eddda9 0%, #cda95d 100%) border-box;
+}
+
+.roulette_cont img {
+  width: 30px;
+  height: 25px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.inner_roulette_cont {
+  position: absolute;
+  left: 0;
+  top: 15px;
+
+  display: flex;
+  align-items: center;
+
+  transition: left 2s ease;
+}
+
+.inner_roulette_cont div {
+  width: 28px;
+  height: 30px;
+  line-height: 30px;
+
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+
+  border: 1px solid #c0c0c0;
+}
+
+.red {
+  background: linear-gradient(180deg, #c9222b 0%, #cc2337 100%);
+}
+
+.black {
+  background: linear-gradient(180deg, #130c11 0%, #161014 100%);
+}
+
+.bet_option_cont {
+  margin: auto;
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-style: normal;
+}
+
+.bet_option {
+  position: relative;
+
+  width: 106px;
+  height: 132px;
+
+  border: 2px solid #569e86;
+  border-radius: 15px;
+}
+
+.coin,
+.bet_option img {
+  position: absolute;
+  z-index: 2;
+
+  width: 36px;
+  height: 36px;
+}
+
+.top {
+  background: #013934;
+
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 2px solid #569e86;
+  color: #73ae96;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bottom {
+  color: #73ae96;
+
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.coin_cont {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 350px;
+  height: 65px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(3.88deg, #074135 5.12%, #000000 104.65%);
+  border: 1px solid #000000;
+  border-top-right-radius: 11px;
+}
+
+.coin_cont img {
+  width: 55px;
+  height: 55px;
+
+  transition: filter 0.1s ease;
+}
+
+.coin_cont img.active {
+  filter: brightness(3);
+}
+
+.player {
+  position: relative;
+  position: absolute;
+
+  left: calc(50% + 21px);
+  bottom: 65px;
+}
+
+.player .avatar {
+  position: absolute;
+  top: -20px;
+  left: -55px;
+}
+
+.player .block {
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.friend {
+  position: relative;
+  position: absolute;
+
+  font-weight: 500;
+}
+
+.friend .name {
+  width: 100px;
+  height: 21px;
+  line-height: 21px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  font-size: 14px;
+}
+
+.friend .friend_balance {
+  width: 95px;
+  height: 26px;
+  line-height: 26px;
+
+  font-size: 16px;
+  color: #ceab60;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.friend .avatar {
+  position: absolute;
+}
+
+.friend.one {
+  left: 60px;
+  top: 97px;
+}
+
+.friend.one .avatar,
+.friend.two .avatar {
+  left: -35px;
+  top: -10px;
+}
+
+.friend.two {
+  left: 60px;
+  top: 200px;
+}
+
+.friend.one,
+.friend.two {
+  text-align: right;
+}
+
+.friend.three,
+.friend.four {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: left;
+  right: 60px;
+}
+
+.friend.three {
+  top: 97px;
+}
+
+.friend.three .avatar,
+.friend.four .avatar {
+  top: -10px;
+  right: -35px;
+}
+
+.friend.four {
+  top: 200px;
+}
+
+.balance_field,
+.bet_button {
+  position: absolute;
+
+  width: 157px;
+  height: 42px;
+
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.balance_field {
+  bottom: 10px;
+  right: 180px;
+
+  justify-content: center;
+}
+
+.balance_field img {
+  width: 30px;
+  height: 30px;
+}
+
+.balance {
+  transition: color 0.3s ease;
+}
+
+.balance.anim {
+  color: red;
+}
+
+.bet_button {
+  bottom: 10px;
+  right: 10px;
+
+  line-height: 42px;
+}
+
+.warning {
+  position: absolute;
+  z-index: 10;
+  left: -60%;
+  top: 10%;
+  transition: left ease 0.5s;
+
+  width: 50%;
+  height: 80%;
+  background: linear-gradient(180deg, #303030 0%, #292929 100%);
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.warning .again {
+  margin: 20px auto;
+  background: #669e0b;
+  border-radius: 12px;
+  width: 65%;
+  height: 59px;
+  line-height: 59px;
+}
+
+@media screen and (max-width: 765px) {
+  .friend.one,
+  .friend.two {
+    left: 40px;
+  }
+
+  .friend.three,
+  .friend.four {
+    right: 40px;
+  }
+
+  .balance_field,
+  .bet_button {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .balance_field {
+    right: 150px;
+  }
+
+  .coin_cont {
+    height: 50px;
+    width: 300px;
+  }
+
+  .coin_cont img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .home {
+    top: 75%;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .friend .avatar {
+    top: 0 !important;
+    width: 40px;
+    height: 40px;
+  }
+
+  .friend .name {
+    width: 70px;
+  }
+
+  .friend .friend_balance {
+    width: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .bet_option_cont {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    visibility: hidden;
+  }
+
+  .roulette_cont {
+    border: none;
+    left: 0;
+    width: 100%;
+  }
+
+  .bet_option_cont {
+    width: 55%;
+  }
+
+  .balance_field,
+  .bet_button {
+    width: 95px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+
+  .balance_field {
+    right: 120px;
+  }
+
+  .balance_field img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .player {
+    bottom: 50px;
+  }
+
+  .player .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .player .block {
+    display: none;
+  }
+
+  .coin_cont {
+    width: 200px;
+  }
+
+  .coin_cont img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-height: 590px) {
+  .player {
+    bottom: 20%;
+  }
+
+  .bet_option {
+    width: 140px;
+    height: 200px;
+  }
+
+  .warning {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-height: 760px) {
+  .player .avatar {
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    top: -35px;
+    left: -110px;
+  }
+
+  .player .block {
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 36px;
+  }
+
+  .friend .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .friend .friend_balance {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 28px;
+  }
+
+  .friend .name {
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+
+  .friend.two,
+  .friend.four {
+    top: 300px;
+  }
+
+  .balance_field, .bet_button {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 36px;
+  }
+
+  .balance_field {
+    right: 225px;
+  }
+
+  .coin_cont {
+    height: 100px;
+    width: 520px;
+  }
+
+  .coin_cont img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-height: 790px) {
+  .friend .friend_balance {
+    width: 180px;
+    font-size: 32px;
+  }
+
+  .warning {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .bet_option {
+    width: 200px;
+    height: 300px;
+    font-size: 28px;
+  }
+
+  .bet_option img {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 60px;
+  width: 60%;
+}
+
+.main img {
+  width: 210px;
+  height: 210px;
+}
+
+.main div {
+  width: 213px;
+  height: 57px;
+  line-height: 57px;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.online {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  width: 131px;
+  height: 226px;
+
+  padding-top: 10px;
+}
+
+.online .block {
+  font-weight: 400;
+  width: 112px;
+  height: 23px;
+
+  margin: 10px auto auto;
+}
+
+.player {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+
+  height: 64px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.balance_field,
+.name {
+  padding-right: 8px;
+  font-weight: 400;
+}
+
+.balance_field {
+  width: 170px;
+  height: 28px;
+
+  justify-content: flex-end;
+}
+
+.balance_field img {
+  width: 26px;
+  height: 26px;
+}
+
+.name {
+  width: 140px;
+  height: 28px;
+
+  position: relative;
+  line-height: 28px;
+  text-align: right;
+}
+
+.avatar {
+  position: absolute;
+  left: -30px;
+  top: -22px;
+}
+
+@media screen and (max-width: 720px) {
+  .main img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .online {
+    height: 180px;
+  }
+}

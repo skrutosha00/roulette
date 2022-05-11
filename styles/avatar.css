@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  align-items: center;
+}
+
+body > div {
+  width: 435px;
+  height: 315px;
+  margin: auto;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+.name > div {
+  width: 283px;
+  height: 33px;
+
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.name span {
+  width: 65px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.avatar_cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a > div {
+  display: inline-block;
+  width: 128px;
+  height: 57px;
+  line-height: 57px;
+  margin: 10px auto;
+}
