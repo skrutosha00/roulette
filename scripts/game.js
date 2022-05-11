@@ -128,8 +128,6 @@ document.querySelector('.bet_button').onclick = () => {
             friendPrize[friendName] = friendBalance[friendName].currentBet[winOption]
             friendBalance[friendName].balance -= friendBalance[friendName].currentTotalBet
             friend.querySelector('.friend_balance').innerHTML = friendBalance[friendName].balance
-
-            changeBalance(prize)
         }, 1250);
     }
 
@@ -152,6 +150,7 @@ document.querySelector('.bet_button').onclick = () => {
 
     setTimeout(() => {
         warning.style.left = '25%'
+        changeBalance(prize)
     }, 3600);
 }
 
