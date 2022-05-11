@@ -13,7 +13,7 @@ let coins = [5, 10, 50, 100, 500, 1000]
 
 let currentCoin = false
 let bet = { "1-18": 0, "0": 0, "19-36": 0 }
-let betCf = { "1-18": 2, "0": 2, "19-36": 36 }
+let betCf = { "1-18": 2, "0": 36, "19-36": 2 }
 let totalBet = 0
 let active = true
 
